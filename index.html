@@ -5,16 +5,21 @@
     <script src="DiceChecker.js"></script>
 </head>
 <body>
-    <h1 class="PageTitle">Dice Checker<i>V1.0</i></h1>
+    <h1 class="PageTitle">Dice Checker<i> V1.0</i></h1>
     <p id="credit">By: J. Anthracite</p>
 
-    <div id="DistDisp">
-        <span class="Segment" style="background-color: deeppink;"></span>
-        <span class="Segment" style="background-color: orangered;"></span>
-        <span class="Segment" style="background-color: greenyellow;"></span>
-        <span class="Segment" style="background-color: blue;"></span>
+    <div id="BarDisplay">
+        <div class="Bar"><div class="BarFill"></div></div>
+    </div>
+    <div id="SegmentDisplay">
+        <span class="Segment" style="background-color: rgb(255, 112, 188);"></span>
     </div>
 
-    <button onclick="test()" style="background-color: orchid; left: 0px; width: fit-content;">Test</button>
+    <input id="DieSize" value="6" style="font-size: 40px; width: 100px;">
+    <button onclick="Initiate()" style="background-color: rgb(58, 58, 58); color: white; left: 0px; width: fit-content; font-size: 40px;">Set Die Size</button>
+    
 </body>
+<script>
+    Initiate();
+</script>
 </html>
